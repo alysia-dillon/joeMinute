@@ -1,0 +1,44 @@
+<!--What is a Joe minute? 
+
+So, our friend Joe is typically late and our mission is to calculate the average of what a Joe minute is in real time to better estimate more accurately his arrival/call back time/repsonse time since that sometimes ranges from 1-3 minutes per 1 Joe minute to sometimes 30 minutes for 1 Joe minute
+
+Must be able to add data to array per submission for each recorded Joe minute
+
+Average array values and provide new average of a Joe minute in both hours and minutes for user to review after each submission
+
+Must be able to calculate time between set time variables and calculate those minutes automatically
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<link rel="stylesheet" href="./css/styles.css">-->
+        <title>Joe Minutes</title>
+    </head>
+    <body>
+            <iframe src="https://giphy.com/embed/yAiJ6byq08TaU" ></iframe>
+
+        <form id="jMinutes">
+            <h1>Calculate a Joe Minute by entering the start and end times below:</h1>
+            <label for="startTime">Start Time</label>
+            <input type="time" id="start" name="start" min="00:00" max="24:00" required>
+            <label for="endTime">End Time</label>
+            <input type="time" id="end" name="end" min="00:00" max="24:00" required>
+
+            <input type="submit" value="Submit">
+            
+            <br><br>
+            <h2>Joe Minutes</h2>
+            <label for="difference">In Hours</label>
+            <input id="difference">
+            <br>
+            <label for="joeMinute">In Minutes</label>
+            <input id="joeMinute">
+            <br>
+            <label for="average">Joe Minute Average & Realtime Delay</label>
+            <input id="average">
+        </form>
+    </body>
+    <script src="./js/main.js"></script>
+</html>
